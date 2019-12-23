@@ -1,0 +1,268 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은 고딕";
+    list-style: none;
+    color: #222328;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    width: 1000px;
+    height: 650px;
+    float: left;
+}
+.clear{
+    clear: both;
+    position: inherit;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.logo{
+    width: 260px;
+    padding: 30px 0px;
+    text-align: center;
+}
+header{
+    width: 260px;
+    height: 650px;
+    background-color: #333333;
+    text-align: center;
+    position: absolute;
+}
+nav{
+    width: 200px;
+    margin: 0 auto;
+}
+.mainmenu>li{
+    font-size: 20px;
+    color: white;
+    padding: 10px 0px;
+    transition: all 0.4s;
+    font-weight: 700;
+}
+.mainmenu>li:hover{
+    background-color: #FFFFC9;
+    color: #222328;
+}
+.submenu{
+    margin: 10px 0px -10px 0px;
+    display: none;
+}
+.submenu>li{
+    background-color: #ffffff;
+    font-size: 17px;
+    padding: 10px 0px;
+    transition: all 0.4s;
+    font-weight: 400;
+}
+.submenu>li:hover{
+    background-color: #FFD561;
+}
+
+
+
+.wrap{
+    width: 740px;
+    float: right;
+    position: relative;
+}
+#imgslide{
+    width: 100%;
+    height: 350px;
+}
+.slide img{
+    position: absolute;
+}
+.slide1{
+    animation: slide1 9s infinite;
+}
+.slide2{
+    animation: slide2 9s infinite;
+}
+.slide3{
+    animation: slide3 9s infinite;
+}
+@keyframes slide1{
+    0%{opacity: 1}
+    33%{opacity: 0}
+    66%{opacity: 0}
+    100%{opacity: 1}
+}
+@keyframes slide2{
+    0%{opacity: 0}
+    33%{opacity: 1}
+    66%{opacity: 0}
+    100%{opacity: 0}
+}
+@keyframes slide3{
+    0%{opacity: 0}
+    33%{opacity: 0}
+    66%{opacity: 1}
+    100%{opacity: 0}
+}
+
+
+
+#contents{
+    height: 200px;
+}
+#noticeNgallery{
+    width: 340px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#noticeBtn{
+    width: 50%;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 22px;
+    float: left;
+    font-weight: 700;
+}
+#noticeBtn:hover{
+    color: #ffff00 !important;
+}
+#galleryBtn{
+    width: 50%;
+    height: 40px;
+    background-color: #aaaaaa;
+    color: #ffffff;
+    font-size: 22px;
+    float: right;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    font-weight: 700;
+}
+#galleryBtn:hover{
+    color: #ffff00 !important;
+}
+#notice{
+    width: 100%;
+    height: 160px;
+}
+#notice tr:nth-child(2n-1){
+    background-color: #ffffff;
+}
+#notice tr:nth-child(2n){
+    background-color: #dddddd;
+}
+.date{
+    float: right;
+}
+#gallery{
+    width: 100%;
+    height: 160px;
+    display: none;
+    margin-top: 40px;
+}
+#gallery img{
+    width: 33.33%;
+    float: left;
+    margin-top: 24px;
+}
+
+
+
+#banner{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+#barogagi{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+
+
+footer{
+    background-color: #666666;
+    height: 100px;
+}
+.footertext{
+    float: right;
+    width: 480px;
+}
+#logoGray{
+    float: left;
+}
+.footermenu>li{
+    color: #ffffff;
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.copyright{
+    color: #ffffff;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+#modalbody{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 175px;
+    margin-left: 250px;
+    border: 1px solid #000000;
+}
+#modalbody>h2{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    background-color: #cccccc;
+    border-bottom: 1px solid #000000;
+}
+#modalbody>P{
+    padding: 20px;
+}
+.modalbutton{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #666666;
+    color: #ffffff;
+    font-weight: 700;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid #666666;
+}
+.modalbutton:hover{
+    background-color: #ffffff;
+    color: #999999;
+}
